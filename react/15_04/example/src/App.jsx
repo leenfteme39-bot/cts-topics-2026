@@ -3,7 +3,7 @@ import Ecommerce from './components/Ecommerce'
 
 export default function App() {
   return (
-    <div>
+    <div>   
       <Ecommerce/>
     </div>
   )
