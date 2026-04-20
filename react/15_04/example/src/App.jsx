@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 
 export default function App() {
   return (
-
+<<<<<<< HEAD
     <BrowserRouter>
         <div className="nav-container">
           <ul>
@@ -21,7 +21,6 @@ export default function App() {
             </li>
           </ul>
         </div>
-
       <Routes>
         <Route path="/" element={<Home />}/>
          <Route path="/Ecommerce" element={<Ecommerce />} />
@@ -29,4 +28,10 @@ export default function App() {
       </Routes>
     </BrowserRouter>
   );
+=======
+    <div>   
+      <Ecommerce/>
+    </div>
+  )
+>>>>>>> 88dbc11e28de2f3da42244415812aac1a3f4eedb
 }
