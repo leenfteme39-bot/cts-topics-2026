@@ -1,4 +1,4 @@
-1. Create a nerw route file called Students
+1. Create a new route file called Students
 2. the data should be:
 
 let students = [
