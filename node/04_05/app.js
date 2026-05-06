@@ -1,16 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = 8080;
 
-// Define a route for GET requests to the root URL
-app.get('/about', (req, res) => {
-    res.send('About Page');
+app.use(express.json());
+
+// חיבור ל־routes
+const studentsRoutes = require("./routes/students.routes");
+app.use("/students", studentsRoutes);
+
+// בדיקה
+app.get("/", (req, res) => {
+  res.send("Server is working");
 });
 
-app.post('/submit', (req, res) => {
-    res.send('Form Submitted');
-});
-// Start the server
+const port = 3000;
+
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log("Server running on http://localhost:3000");
 });
