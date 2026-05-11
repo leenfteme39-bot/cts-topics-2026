@@ -19,8 +19,6 @@ export default function Ecommerce() {
     useEffect(() => {
         loadData();
     },[])
-
-
     return (
         <div>
             {api.map(function (value) {
